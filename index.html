@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>ViviendasInteligentes</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="Keywords" content="Ejemplo de HTML">
+		<meta name="Description" content="">
+		<meta name="Author" content="">
+		<meta name ="Copyright" content ="derechos reservados">
+		<link rel="stylesheet" type="text/css" href="css/estiloIndex.css" title="style" />
+	</head>
+	
+	<body>
+		<div id="imagenPortadaCabezal">
+			<a href="index.html"> <img src="img\viviendaInteligente.png" title="Página Principal" alt="PortadaCabezal" /> </a>
+		</div>
+		<div id="contenedor">
+
+					
+			<!-- Introducción a la temática -->
+			
+			<div id="seccionTextoIntroTematica">
+				<div id="contenidoTextoIntroTematica">		
+					<div id="tituloTextoIntroTematica">
+						<h3>¿Qué es una vivienda inteligente?</h3>
+					</div>
+				
+					<div id="textoIntroTematica" align="justify">
+						Una Vivienda Inteligente es una casa con un diseño arquitectónico y unas tecnologías avanzadas, todo ello integrado y desarrollado conjuntamente para permitir al usuario vivir más cómodamente según sus necesidades y deseos.
+
+						El diseño arquitectónico se refiere a la creación de espacios y la organización de la casa en planta en un conjunto que permita la posibilidad de llevar a cabo tanto actividades tradicionales del hogar como nuevas actividades relacionadas con las tecnologías digitales. Las nuevas actividades son por ejemplo: trabajo profesional con el PC, compras o gestiones bancarias a través de Internet o juegos on-line con la videoconsola frente la televisión.
+
+						Las tecnologías avanzadas y su integración con otros sistemas del hogar se suele llamar domótica. La domótica es el uso simultáneo de la electricidad, la electrónica y la informática, aplicadas a la gestión técnica de las viviendas. Esta gestión técnica consiste en la modificación, local o remota, de los parámetros de funciones como:
+
+						Ahorro energético: regulación temperatura, control de la iluminación, gestión de los consumos de cada electrodoméstico y de la potencia contratada, etc. 
+						Seguridad: custodia y vigilancia frente a la intrusión, la inundación, el fuego, los escapes de gas, pero también la seguridad personal con alarmas de pánico, alarmas para gente mayor que se ha caído, etc. 
+						Comunicaciones: telecontrol y telemetría, acceso a Internet, comunicación interna y comparto de recursos informáticos dentro del hogar. 
+						Confort: programaciones horarias calefacción, escenarios luminosos, riego automático, etc. 
+						La Vivienda Inteligente es un concepto que ayuda tanto a familias jóvenes, cuya primera preocupación es el ahorro de tiempo, como a gente mayor que principalmente se preocupa su salud y seguridad. Se puede aplicar tanto a apartamentos como a casas unifamiliares y tanto a primeras viviendas como a segundas viviendas en la playa, en zonas rurales o en las montañas. Es decir, una Vivienda Inteligente puede ayudar a todos, con su capacidad de:
+
+						Disminuir el gasto energético para cuidar el medioambiente y ahorrar dinero. 
+						Aumentar el confort y la tranquilidad tanto cuando estamos dentro como fuera de la casa. 
+						Facilitar la organización de la vida cotidiana. 
+						Aumentar la seguridad y mejorar las ayudas para gente mayor y discapacitados 
+						Poder comunicarnos con familiares y amigos. 
+						Hacer nuevas tareas desde la casa como trabajar o comprar.
+					</div>
+				</div>	
+			</div>
+			
+			<!-- imagen ejemplo de vivienda inteligente -->
+			<div id="imagenEjemploVivienda">
+				<div id="tituloimagenEjemploVivienda">
+					Ejemplos
+				</div>
+				<div id="contenedorSlide">
+					<div>
+						<img class="mySlides" src="img\ejemploVivienda.jpg" >
+						<img class="mySlides" src="img\viviendaInteligente.png" >
+
+						<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+				</div>				
+			</div>
+			
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+			
+			<!-- 4 características relevantes de la temática -->	
+			<div id="seccionCuatroCaracteristicas">
+				<div id="contenidoCuatroCaracteristicas">		
+					<div id="tituloCuatroCaracteristicas">	
+						Caracteristicas relevantes:
+					</div>
+					<div id="cuatroCaracteristicas">
+						
+						<ol> 
+							<li>Seguridad de cada persona mediante dispositivos automáticos de control: alarmas para intrusión y pánico, control de fuego y humo, vigilancia interna y remota.</li><br> 
+							<li>Ahorro de energía mediante el control de la temperatura interna, de la iluminación del lugar y el consumo de electrodomésticos.</li> <br>
+							<li>La comunicación con el exterior, por medio del acceso a la red de Internet, la intercomunicación dentro de la ­vivienda y el enlace de todos los sistemas de aplicación avanzada.</li><br> 
+							<li>Control de instalaciones y aparatos eléctricos. Se puede programar la hora exacta para que estos se enciendan.</li>
+						</ol>		
+					</div>
+				</div>
+			</div>
+				
+			<!-- Tabla Referencias -->	
+			<div id="seccionTablaReferencias">
+				<div id="tituloTablaReferencias">
+					Referencias
+				</div>
+				<Table id="tablaReferencias">
+					<tr>
+						<th class="titulosTablaReferencias">Nombre</th>
+						<th class="titulosTablaReferencias">Link</th>
+						<th class="titulosTablaReferencias">Idioma</th>
+					</tr>
+					<tr>
+						<td>Revista familia</td>
+						<td><a href="http://www.revistafamilia.ec/articulos-portada/6763-casas-inteligentes-tecnologia-hogares-seguridad">Ir</a></td>
+						<td>Español</td>
+					</tr>
+					<tr>
+						<td>Gruporeflex</td>
+						<td><a href="http://gruporeflex.com/?page_id=52">Ir</a></td>
+						<td>Español</td>
+					</tr>
+					<tr>
+						<td>Link</td>
+						<td><a href="http://link.estadao.com.br/noticias/gadget,casa-inteligente-entra-no-radar-do-brasileiro-e-vira-alvo-de-varias-industrias,10000028829">Ir</a></td>
+						<td>Portugués</td>
+					</tr>
+					<tr>
+						<td><em>New Horizons</em></td>
+						<td><a href="https://newhorizons-development.com/">Ir</a></td>
+						<td>Inglés</td>
+					</tr>
+					<tr>
+						<td colspan="3"><p align="center">Total de 4 sitios</p></td>
+					</tr>		
+				</Table>
+			</div>
+			
+			<!-- Boton mas info -->	
+			<div id="seccionBotonAmpliacion">
+				<div id="botonAmpliacion">
+					<a href="ampliacion.html" class="boton amarillo">Más Información</a>
+				</div>
+			</div>
+			
+			<!-- Pie de pagina -->	
+			<div id="piePagina">
+				<div id="contacto">
+					<div id="descripcionContacto">
+						Contacto
+					</div>
+					<a href="contacto.html"> <img src="img\contacto.png" title="Contacto" alt="Contacto" /> </a>
+				</div>
+				<div id="redesSociales">
+					<Table id="tablaRedesSociales">
+						<tr>
+							<th id="tituloRedesSociales" colspan="5">Seguinos en</th>
+						</tr>
+						<tr>
+							<td>												
+								<a href="https://www.facebook.com/viviendainteligente/" target="_blank" >
+									<img src="img\facebook.png" title="Facebook" alt="Facebook" id="facebook"/>
+								</a>
+							</td>
+							<td style="font-size: 0; line-height: 0;" width="9">&nbsp;</td>
+							<td>
+								<a href="https://www.instagram.com/pgsluz/" target="_blank" >
+									<img src="img\Instagram.png" title="Instagram" alt="Instagram" id="instagram"/>
+								</a>
+							</td>
+							<td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+							<td>
+								<a href="https://www.youtube.com/watch?v=Tu-yXNSdaws" target="_blank" >
+									<img src="img\youtube.png" title="YouTube" alt="YouTube" id="youtube" />
+								</a>
+							</td>
+						</tr>
+					</Table>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

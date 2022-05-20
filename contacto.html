@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Contacto</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="Keywords" content="Ejemplo de HTML">
+		<meta name="Description" content="">
+		<meta name="Author" content="">
+		<meta name ="Copyright" content ="derechos reservados">
+		<link rel="stylesheet" type="text/css" href="css/estiloContacto.css" title="style" />
+		<script language="JavaScript">
+			function pregunta(){
+				if (confirm('¿Estas seguro de enviar este formulario?')){
+					alert("El formulario ha sido enviado")
+				}
+			}
+		</script>
+	</head>
+	
+	<body>
+		<div id="imagenPortadaCabezal">
+			<a href="index.html"> <img src="img\viviendaInteligente.png" title="Página Principal" alt="PortadaCabezal" /> </a>
+		</div>
+		<div id="contenedor">
+
+					
+			<!-- Formulario contacto -->
+			
+			<div id="seccionFormularioContacto">
+				<div id="contenidoFormularioContacto">		
+					<div id="tituloFormularioContacto">
+						FORMULARIO DE CONTACTO
+					</div>
+				
+					<div id="FormularioContacto">
+						<form action="datospersonales.jsp" method="get">
+						
+							<fieldset>
+								<legend>Datos Personales</legend>
+								Nombre:<br>
+								<input name="Nombre" type="text" size="30" maxlength="30"><br>
+								Edad:<br>
+								<input name="Edad" type="number" min="18" max="70" maxlength="2"><br> 
+								Teléfono:<br>
+								<input name="Telefono" type="number"  maxlength="20"><br> 
+								País:<br>
+								<input name="Pais" type="text" list="paises" size="15" maxlength="15"><br> 
+								<datalist id="paises"> 
+											<option value=Uruguay>Uruguay</option> 
+											<option value=Argentina>Argentina</option> 
+											<option value=Brasil>Brasil</option> 
+											<option value=Paraguay>Paraguay</option> 
+											<option value=Chile>Chile</option> 
+								</datalist>
+							</fieldset>
+					
+							<fieldset>
+								<legend>Correo</legend>
+								e-mail:<br>
+								<input name="email" type="email" size="30" maxlength="30"><br>
+							</fieldset>
+							
+							<fieldset>
+								<legend>Consulta</legend>
+								<textarea name="obs" cols=50 rows=8 placeholder="Realice su consulta"></textarea><br>
+								<input type="radio" name="tipoConsulta" value="C" checked>Común<br>
+								<input type="radio" name="tipoConsulta" value="U">Urgente<br>
+							</fieldset>
+							<input type="submit" onclick="pregunta()">
+							<input type="reset">
+						</form>							
+					</div>
+				</div>	
+				<div id="volverPaginaPrincipal">
+					<a href="index.html"> <img src="img\home.png" title="Volver Página Principal" alt="volverPaginaPrincipal" /> </a>
+					<div id="descripcionVolverPaginaPrincipal">
+						Volver página principal
+					</div>
+				</div>
+			</div>
+			
+			<!-- Pie de pagina -->	
+			<div id="piePagina">
+				<div id="contacto">
+					<div id="descripcionContacto">
+						Contacto
+					</div>
+					<a href="contacto.html"> <img src="img\contacto.png" title="Contacto" alt="Contacto" /> </a>
+				</div>
+			
+				<div id="redesSociales">
+					<Table id="tablaRedesSociales">
+						<tr>
+							<th id="tituloRedesSociales" colspan="5">Seguinos en</th>
+						</tr>
+						<tr>
+							<td>												
+								<a href="https://www.facebook.com/viviendainteligente/" target="_blank" >
+									<img src="img\facebook.png" title="Facebook" alt="Facebook" id="facebook"/>
+								</a>
+							</td>
+							<td style="font-size: 0; line-height: 0;" width="9">&nbsp;</td>
+							<td>
+								<a href="https://www.instagram.com/pgsluz/" target="_blank" >
+									<img src="img\Instagram.png" title="Instagram" alt="Instagram" id="instagram"/>
+								</a>
+							</td>
+							<td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
+							<td>
+								<a href="https://www.youtube.com/watch?v=Tu-yXNSdaws" target="_blank" >
+									<img src="img\youtube.png" title="YouTube" alt="YouTube" id="youtube" />
+								</a>
+							</td>
+						</tr>
+					</Table>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

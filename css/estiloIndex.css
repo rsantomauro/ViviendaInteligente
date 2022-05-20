@@ -1,0 +1,294 @@
+/*-- Básico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; }
+
+/*-- Layout ----------------------------------------------------------*/
+body{
+	margin-top:0;
+	font-family: TimesNewRoman, 'Times New Roman', Times;
+	font-size:12px; 
+}
+
+#contenedor {
+	padding-top: 120px;
+}
+
+/*-- Imagen cabezal --------------------------------------------------------*/
+#imagenPortadaCabezal{
+	background: white;
+	width:100%;
+	position:fixed;
+	z-index:1;
+	
+}
+
+#imagenPortadaCabezal img {
+	width:auto;
+	height: 100px; 
+	display: block;
+	margin: 0 auto;
+	padding-bottom:10px;
+	padding-top:10px;
+	
+}
+
+/*-- Introducción a la temática --------------------------------------------*/		
+#seccionTextoIntroTematica {
+	background-color: #F0EEE7;
+	padding-bottom:15px;
+	height:400px;
+	position: relative;
+}
+
+#contenidoTextoIntroTematica{
+	width: 90%;
+	max-width: 900px;
+	width: expression(document.body.clientWidth > 901? "900px": "auto");
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#tituloTextoIntroTematica{
+
+	margin-bottom:15px;
+	padding-top:15px;
+	font-weight:bold;
+	text-align:center;
+}	
+							
+#textoIntroTematica {	
+
+}
+
+/*-- imagen ejemplo de vivienda inteligente---------------------------------*/	
+
+#imagenEjemploVivienda{
+	height:400px;
+	position: relative;		
+}
+
+#tituloimagenEjemploVivienda{
+	padding-top:15px;
+	font-weight:bold;	
+	text-align:center;
+	padding-top:3%;
+}
+	
+
+#contenedorSlide{
+	width: 90%;
+	max-width: 900px;
+	width: expression(document.body.clientWidth > 901? "900px": "auto");
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+	
+#imagenEjemploVivienda img {
+	width:100%; 
+	height:170px;
+
+}	
+
+/*-- Clases para slide de imagenes --------------------------------*/	
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}			
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+/*-------------------------------------------------------------------*/
+
+
+/*-- 4 características relevantes de la temática-----------------------------*/	
+#seccionCuatroCaracteristicas {
+	background-color: #F0EEE7;
+	height:400px;
+	position: relative;
+}
+
+#contenidoCuatroCaracteristicas{
+	max-width: 900px;
+	width: expression(document.body.clientWidth > 901? "900px": "auto");
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);	
+	
+	
+}
+
+#tituloCuatroCaracteristicas{
+	margin-bottom:15px;
+	font-weight:bold;
+}	
+							
+#cuatroCaracteristicas {	
+
+}
+
+/*-- Tabla Referencias-----------------------------*/	
+#seccionTablaReferencias{
+	padding-bottom:15px;
+	padding-top:15px;
+	height:400px;
+	position: relative;
+}
+						
+#tablaReferencias {
+    border-collapse: collapse;
+	font-family: arial, sans-serif;
+	width: 90%;
+	max-width: 900px;
+	width: expression(document.body.clientWidth > 901? "900px": "auto");
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	
+}
+
+#tablaReferencias td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#tituloTablaReferencias{
+	margin-top: 35px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.titulosTablaReferencias{
+	border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	font-weight:bold;	
+}
+
+#tablaReferencias tr:nth-child(even) {
+    background-color: #F0EEE7;
+}	
+
+/*-- Boton mas info-----------------------------*/	
+#seccionBotonAmpliacion{
+	height:400px;
+	width: 100%;
+	background-color: #F0EEE7;
+	position: relative;
+}
+
+#botonAmpliacion{
+	width:auto;
+	height: auto; 
+	display: block;
+	padding-top:15px;
+	padding-bottom:15px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.boton{
+	text-align:center;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	display:inline-block;
+	color: #6D6D6D;
+	font-weight: bold;
+	background: #FFC900;
+	padding: 15px 40px;
+	white-space: nowrap;
+	margin: 10px 5px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+      
+.amarillo{
+  background: #FFC900;
+  box-shadow: 0px 5px 0px 0px #ECBD00;
+}
+
+.amarillo:hover{
+  background: #FFD015;
+}
+
+.amarillo:active{
+  box-shadow: 0px 2px 0px 0px #FFD015;
+}
+
+
+/*-- Pie de pagina-----------------------------*/		
+#piePagina {
+	background-color: #4A4A4A;
+	height: 170px;
+}		
+
+#redesSociales{
+	float:right;
+	padding-right:10%;
+	padding-top:40px;
+	float:right;
+}
+
+#tituloRedesSociales {
+	font-size: 25px;
+	color: #FFC900;
+	line-height: 20px;
+	font-weight: bold;
+}
+
+#facebook {
+	width:60px;
+	height:60px;
+}	
+
+#instagram {
+	width:42px;
+	height:42px;
+}	
+
+#youtube {
+	width:40px;
+	height:40px;
+}
+
+#contacto{
+	float:left;
+}		
+
+#contacto{
+	float:left;
+	padding-left: 9%;
+    padding-top: 32px;
+}	
+
+#descripcionContacto{
+	font-size: 25px;
+	color: #FFC900;
+	line-height: 20px;
+	font-weight: bold;
+	text-align:left;
+}
+
+#contacto img{
+	width:auto;
+	height:60px;
+	padding-left: 18px;
+	padding-top:9px;
+}			
+							
